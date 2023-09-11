@@ -6,15 +6,15 @@ const express = require('express');
      const track = req.query.track;
      const currentDay = new Date().toLocaleDateString('en-US', { weekday: 'long' });
      const utcTime = new Date().toISOString();
-     const githubFileUrl = 'https://github.com/username/repo/blob/main/file_name.ext';
-     const githubRepoUrl = 'https://github.com/username/repo';
+     const githubFileUrl = 'https://github.com/BrianKimurgor/back_end_zuri/blob/main/src/app.js';
+     const githubRepoUrl = 'https://github.com/BrianKimurgor/back_end_zuri';
      const statusCode = 200;
 
      const responseData = {
-       slack_name: slackName,
+       slack_name: "Bran Kimurgor",
        current_day: currentDay,
        utc_time: utcTime,
-       track: track,
+       track: 'backend',
        github_file_url: githubFileUrl,
        github_repo_url: githubRepoUrl,
        status_code: statusCode
